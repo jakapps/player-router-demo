@@ -1,3 +1,5 @@
 import { mockGameServer } from "./mock-game-server";
 
-mockGameServer("exampleUrl.com");
+mockGameServer({
+    playerRouterURL: ["player-router-demo.jakapp.io"]
+});

@@ -11,5 +11,9 @@
     "license": "MIT",
     "devDependencies": {
         "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "@types/node": "^16.0.1",
+        "player-router-js-sdk": "^1.0.2"
     }
 }
