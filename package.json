@@ -1,0 +1,11 @@
+{
+  "name": "player-router-demo",
+  "version": "1.0.0",
+  "description": "Example demonstration of Player Router",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jack Wright",
+  "license": "MIT"
+}
