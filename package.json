@@ -1,11 +1,15 @@
 {
-  "name": "player-router-demo",
-  "version": "1.0.0",
-  "description": "Example demonstration of Player Router",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "Jack Wright",
-  "license": "MIT"
+    "name": "player-router-demo",
+    "version": "1.0.0",
+    "description": "Example demonstration of Player Router",
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "tsc && node dist/index.js",
+        "test": "jest"
+    },
+    "author": "Jack Wright",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^4.3.5"
+    }
 }

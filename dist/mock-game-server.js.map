@@ -1,0 +1,1 @@
+{"version":3,"file":"mock-game-server.js","sourceRoot":"","sources":["../src/mock-game-server.ts"],"names":[],"mappings":";;;AACA,MAAM,cAAc,GAAG,CAAC,GAAW,EAAE,EAAE;IACnC,6CAA6C;IAE7C,UAAU,CAAC,GAAG,EAAE;QACZ,gDAAgD;IACpD,CAAC,EAAE,IAAI,CAAC,CAAC;AACb,CAAC,CAAC;AAEO,wCAAc"}
