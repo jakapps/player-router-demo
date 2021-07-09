@@ -1,6 +1,6 @@
 import AgonesSDK from "@google-cloud/agones-sdk";
 
-const agones = async () => {
+const startAgones = async () => {
     // Need to register this server to agones via the agones SDK
 
     if(!process.env.AGONES_SDK_HTTP_PORT) {
@@ -53,7 +53,7 @@ const deallocate = (agones) : Promise<any> => {
 }
 
 export {
-    agones,
+    startAgones,
     allocate,
     deallocate,
     getGameServerAddress

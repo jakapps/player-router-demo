@@ -12,9 +12,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getGameServerAddress = exports.deallocate = exports.allocate = exports.agones = void 0;
+exports.getGameServerAddress = exports.deallocate = exports.allocate = exports.startAgones = void 0;
 const agones_sdk_1 = __importDefault(require("@google-cloud/agones-sdk"));
-const agones = () => __awaiter(void 0, void 0, void 0, function* () {
+const startAgones = () => __awaiter(void 0, void 0, void 0, function* () {
     // Need to register this server to agones via the agones SDK
     if (!process.env.AGONES_SDK_HTTP_PORT) {
         return;
@@ -26,7 +26,7 @@ const agones = () => __awaiter(void 0, void 0, void 0, function* () {
     setInterval(() => agones.health(), 2500);
     return agones;
 });
-exports.agones = agones;
+exports.startAgones = startAgones;
 const getGameServerAddress = (agones) => __awaiter(void 0, void 0, void 0, function* () {
     let gameserver = yield agones.getGameServer();
     if (!gameserver.status || !gameserver.status.portsList.length) {
